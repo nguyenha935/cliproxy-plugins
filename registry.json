@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "plugins": [
+    {
+      "id": "manager-key-pro",
+      "name": "Manager Key Pro",
+      "description": "SaaS-style downstream API key manager: user accounts, wallet, quota, billing, portal, affiliate.",
+      "author": "nguyenha935",
+      "version": "0.1.0",
+      "repository": "https://github.com/nguyenha935/manager-key-pro",
+      "homepage": "https://github.com/nguyenha935/manager-key-pro",
+      "license": "MIT",
+      "tags": ["billing", "keys", "quota", "wallet", "saas"],
+      "install": {
+        "type": "github-release",
+        "artifacts": [
+          {
+            "goos": "linux",
+            "goarch": "amd64",
+            "url": "https://github.com/nguyenha935/manager-key-pro/releases/download/v0.1.0/manager-key-pro_linux_amd64.zip"
+          },
+          {
+            "goos": "linux",
+            "goarch": "arm64",
+            "url": "https://github.com/nguyenha935/manager-key-pro/releases/download/v0.1.0/manager-key-pro_linux_arm64.zip"
+          },
+          {
+            "goos": "darwin",
+            "goarch": "amd64",
+            "url": "https://github.com/nguyenha935/manager-key-pro/releases/download/v0.1.0/manager-key-pro_darwin_amd64.zip"
+          },
+          {
+            "goos": "darwin",
+            "goarch": "arm64",
+            "url": "https://github.com/nguyenha935/manager-key-pro/releases/download/v0.1.0/manager-key-pro_darwin_arm64.zip"
+          }
+        ]
+      }
+    }
+  ]
+}
