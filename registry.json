@@ -10,14 +10,22 @@
       "repository": "https://github.com/nguyenha935/manager-key-pro",
       "homepage": "https://github.com/nguyenha935/manager-key-pro",
       "license": "MIT",
-      "tags": ["billing", "keys", "quota", "wallet", "saas"],
+      "tags": [
+        "billing",
+        "keys",
+        "quota",
+        "wallet",
+        "saas"
+      ],
       "install": {
         "type": "github-release",
         "artifacts": [
           {
             "goos": "linux",
             "goarch": "amd64",
-            "url": "https://github.com/nguyenha935/manager-key-pro/releases/download/v0.1.0/manager-key-pro_linux_amd64.zip"
+            "url": "https://github.com/nguyenha935/manager-key-pro/releases/download/v0.1.0/manager-key-pro_linux_amd64.zip",
+            "sha256": "6a55203fe996ae570178ae25759b66e4a65189e1fd5080b9d0d6b20b299b6a44",
+            "size": 8800000
           },
           {
             "goos": "linux",
