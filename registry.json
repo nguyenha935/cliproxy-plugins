@@ -50,7 +50,7 @@
       "name": "Kiro CPA Plugin",
       "description": "Standalone Kiro provider with CPA Authentication Files, multi-auth, account protection, streaming, tools, and usage reporting.",
       "author": "nguyenha935",
-      "version": "0.7.0-ha1",
+      "version": "0.7.0-ha2",
       "repository": "https://github.com/nguyenha935/kiro-cpa-plugin",
       "homepage": "https://github.com/nguyenha935/kiro-cpa-plugin",
       "license": "MIT",
@@ -62,16 +62,16 @@
       ],
       "versions": [
         {
-          "version": "0.7.0-ha1",
+          "version": "0.7.0-ha2",
           "install": {
             "type": "github-release",
             "artifacts": [
               {
                 "goos": "linux",
                 "goarch": "amd64",
-                "url": "https://github.com/nguyenha935/kiro-cpa-plugin/releases/download/v0.7.0-ha1/kiro-linux-amd64.tar.gz",
-                "sha256": "660164aee3face9c33d91773550acd6dbad12e54438a4984f98efee893fe9fe4",
-                "size": 18927195
+                "url": "https://github.com/nguyenha935/kiro-cpa-plugin/releases/download/v0.7.0-ha2/kiro-linux-amd64.tar.gz",
+                "sha256": "2ed3f3c706bd0628c68bcfbb3cf71173ea5beb50451d18bf85f0e06895a64ef6",
+                "size": 18929267
               }
             ]
           }
@@ -83,9 +83,9 @@
           {
             "goos": "linux",
             "goarch": "amd64",
-            "url": "https://github.com/nguyenha935/kiro-cpa-plugin/releases/download/v0.7.0-ha1/kiro-linux-amd64.tar.gz",
-            "sha256": "660164aee3face9c33d91773550acd6dbad12e54438a4984f98efee893fe9fe4",
-            "size": 18927195
+            "url": "https://github.com/nguyenha935/kiro-cpa-plugin/releases/download/v0.7.0-ha2/kiro-linux-amd64.tar.gz",
+            "sha256": "2ed3f3c706bd0628c68bcfbb3cf71173ea5beb50451d18bf85f0e06895a64ef6",
+            "size": 18929267
           }
         ]
       }
