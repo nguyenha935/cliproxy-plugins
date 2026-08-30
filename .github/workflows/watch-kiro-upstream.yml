@@ -45,4 +45,4 @@ jobs:
           git push --force-with-lease origin "$branch"
           gh pr create --base main --head "$branch" \
             --title "Review Kiro upstream $VERSION" \
-            --body "Upstream published $VERSION. This PR only records detection. Review compatibility, cherry-pick appropriate changes into the fork, run tests, and publish a reviewed fork release before editing registry.json. Do not auto-merge."
+            --body "Upstream published $VERSION. This PR only records detection. Review compatibility, port appropriate changes into the standalone project, run tests, and publish a reviewed project release before editing registry.json. Do not auto-merge."
