@@ -1,0 +1,48 @@
+name: Watch Kiro upstream
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  propose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check upstream release
+        id: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          latest=$(gh api repos/JPSAUD501/CLIProxyAPI-Kiro-Plugin/releases/latest --jq .tag_name)
+          current=$(cat .kiro-upstream-version 2>/dev/null || true)
+          echo "latest=$latest" >> "$GITHUB_OUTPUT"
+          if [ "$latest" = "$current" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            printf '%s\n' "$latest" > .kiro-upstream-version
+          fi
+      - name: Open review PR
+        if: steps.release.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.release.outputs.latest }}
+        run: |
+          set -euo pipefail
+          branch="automation/kiro-upstream-${VERSION//[^0-9A-Za-z._-]/-}"
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git checkout -B "$branch"
+          git add .kiro-upstream-version
+          git commit -m "chore: review Kiro upstream $VERSION"
+          git push --force-with-lease origin "$branch"
+          gh pr create --base main --head "$branch" \
+            --title "Review Kiro upstream $VERSION" \
+            --body "Upstream published $VERSION. This PR only records detection. Review compatibility, cherry-pick appropriate changes into the fork, run tests, and publish a reviewed fork release before editing registry.json. Do not auto-merge."
