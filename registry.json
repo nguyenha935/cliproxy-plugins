@@ -50,7 +50,7 @@
       "name": "Kiro CPA Plugin",
       "description": "Standalone Kiro provider with CPA Authentication Files, multi-auth, account protection, streaming, tools, and usage reporting.",
       "author": "nguyenha935",
-      "version": "0.8.0-ha17",
+      "version": "0.8.0-ha18",
       "repository": "https://github.com/nguyenha935/kiro-cpa-plugin",
       "homepage": "https://github.com/nguyenha935/kiro-cpa-plugin",
       "license": "MIT",
@@ -61,6 +61,35 @@
         "api-key"
       ],
       "versions": [
+        {
+          "version": "0.8.0-ha18",
+          "install": {
+            "type": "github-release",
+            "artifacts": [
+              {
+                "goos": "linux",
+                "goarch": "amd64",
+                "url": "https://github.com/nguyenha935/kiro-cpa-plugin/releases/download/v0.8.0-ha18/kiro-linux-amd64.tar.gz",
+                "sha256": "32eb000c615ad3aefec12e75ff2c1e5f97fa89fb1883f5e3d48a012198d78381",
+                "size": 18925242
+              },
+              {
+                "goos": "linux",
+                "goarch": "arm64",
+                "url": "https://github.com/nguyenha935/kiro-cpa-plugin/releases/download/v0.8.0-ha18/kiro-linux-arm64.tar.gz",
+                "sha256": "83f1ea52a154c66d6f94fbb0524303f8ec1e12172b45c3dbd8d861e83b4a22f6",
+                "size": 17543896
+              },
+              {
+                "goos": "windows",
+                "goarch": "amd64",
+                "url": "https://github.com/nguyenha935/kiro-cpa-plugin/releases/download/v0.8.0-ha18/kiro-windows-amd64.zip",
+                "sha256": "1a5b33707f1ba6a0eae649c2595914cf786d5f389fc1f3bac18bc5758123e89f",
+                "size": 17112629
+              }
+            ]
+          }
+        },
         {
           "version": "0.8.0-ha17",
           "install": {
@@ -561,23 +590,23 @@
           {
             "goos": "linux",
             "goarch": "amd64",
-            "url": "https://github.com/nguyenha935/kiro-cpa-plugin/releases/download/v0.8.0-ha17/kiro-linux-amd64.tar.gz",
-            "sha256": "e0320c88a0a735bbe3b4ea41b1eb01b267bea200aa27e9906f85ceb67dc8e01c",
-            "size": 18926899
+            "url": "https://github.com/nguyenha935/kiro-cpa-plugin/releases/download/v0.8.0-ha18/kiro-linux-amd64.tar.gz",
+            "sha256": "32eb000c615ad3aefec12e75ff2c1e5f97fa89fb1883f5e3d48a012198d78381",
+            "size": 18925242
           },
           {
             "goos": "linux",
             "goarch": "arm64",
-            "url": "https://github.com/nguyenha935/kiro-cpa-plugin/releases/download/v0.8.0-ha17/kiro-linux-arm64.tar.gz",
-            "sha256": "14d74557bdb51cefdf0e363ed867ed88a1b0ac28d34024ad2b433263930417e2",
-            "size": 17542299
+            "url": "https://github.com/nguyenha935/kiro-cpa-plugin/releases/download/v0.8.0-ha18/kiro-linux-arm64.tar.gz",
+            "sha256": "83f1ea52a154c66d6f94fbb0524303f8ec1e12172b45c3dbd8d861e83b4a22f6",
+            "size": 17543896
           },
           {
             "goos": "windows",
             "goarch": "amd64",
-            "url": "https://github.com/nguyenha935/kiro-cpa-plugin/releases/download/v0.8.0-ha17/kiro-windows-amd64.zip",
-            "sha256": "40b25f86e5af9962d465e46ba6281f1852abef79d18cd5f7d898f605c04fefc9",
-            "size": 17114529
+            "url": "https://github.com/nguyenha935/kiro-cpa-plugin/releases/download/v0.8.0-ha18/kiro-windows-amd64.zip",
+            "sha256": "1a5b33707f1ba6a0eae649c2595914cf786d5f389fc1f3bac18bc5758123e89f",
+            "size": 17112629
           }
         ]
       }
