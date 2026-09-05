@@ -9,6 +9,7 @@
       "version": "0.8.0-ha29",
       "repository": "https://github.com/nguyenha935/kiro-cpa-plugin",
       "homepage": "https://github.com/nguyenha935/kiro-cpa-plugin",
+      "logo": "https://raw.githubusercontent.com/nguyenha935/cliproxy-plugins/main/logos/kiro.png",
       "license": "MIT",
       "tags": [
         "kiro",
