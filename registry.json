@@ -718,7 +718,7 @@
       "name": "Manager Key Pro",
       "description": "SaaS-style downstream API key manager for CLIProxyAPI: per-key quotas, wallets, model allowlists, credential binding, live pricing and usage settlement, with its own admin panel and user portal. The source repository is private, so this entry is listed for the author's own instances and cannot be installed by others.",
       "author": "nguyenha935",
-      "version": "0.5.0",
+      "version": "1.0.0",
       "repository": "https://github.com/nguyenha935/manager-key-pro",
       "homepage": "https://github.com/nguyenha935/manager-key-pro",
       "logo": "https://raw.githubusercontent.com/nguyenha935/cliproxy-plugins/main/logos/manager-key-pro.svg",
