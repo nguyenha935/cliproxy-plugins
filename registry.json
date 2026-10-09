@@ -6,7 +6,7 @@
       "name": "Kiro CPA Plugin",
       "description": "Standalone Kiro provider with CPA Authentication Files, multi-auth, account protection, streaming, tools, and usage reporting.",
       "author": "nguyenha935",
-      "version": "0.9.8",
+      "version": "0.9.9",
       "repository": "https://github.com/nguyenha935/kiro-cpa-plugin",
       "homepage": "https://github.com/nguyenha935/kiro-cpa-plugin",
       "logo": "https://raw.githubusercontent.com/nguyenha935/cliproxy-plugins/main/logos/kiro.png",
